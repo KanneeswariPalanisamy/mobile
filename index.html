@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <style>
+    #header {
+        color: black;
+        margin-left:  600px;
+        padding-right:2px ;
+    }
+    .flexnav ,.flexright:hover{
+  display: flex;
+  gap: 20px;
+  
+    }
+    nav{
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+  padding: 5px;
+  color: antiquewhite;
+  border-radius: 10px;
+  height: 20px;
+    }
+    .img{
+        transition: all 3s 1s linear;
+        animation: img1 3s 2s infinite forwards;
+    }
+    @keyframes img1{
+        from{
+            background-color: rgb(197, 206, 206);
+            transform: translate X(0)
+        }
+        to{
+            background-color: blueviolet;
+            transform:  translate y(50px);
+        }
+    }
+    @media screen and (min-width: 600px) 
+       {
+        body{
+            background-color: darkred;
+        }
+        
+       }
+  
+ </style>
+ <body>
+    <h1 id="header"> Supreme  Mobiles</h1>
+    <nav>
+    <div class="flexnav">
+        <a>Home </a>
+        <a> About</a> 
+    </div>
+    <div class=" flexright">
+        <a>Contact us</a>
+        <a>Login</a>
+    </div>
+    </nav>
+    <div class="img">
+        <img src="mobile.jpg ">
+    </div>
+ </body>
+ </html>
